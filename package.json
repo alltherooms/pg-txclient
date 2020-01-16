@@ -1,0 +1,19 @@
+{
+  "name": "pg-connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.17.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^7.14.1",
+    "typescript": "^3.7.4"
+  }
+}
