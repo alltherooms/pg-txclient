@@ -1,11 +1,13 @@
 {
-  "name": "pg-connector",
-  "version": "1.0.0",
+  "name": "pg-txclient",
+  "version": "0.0.5",
   "description": "",
-  "main": "index.js",
-  "types": "dist/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "prepublish": "tsc"
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +15,10 @@
     "pg": "^7.17.1"
   },
   "devDependencies": {
+    "@types/node": "^13.1.7",
     "@types/pg": "^7.14.1",
-    "typescript": "^3.7.4"
+    "rollup": "^1.29.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.5"
   }
 }

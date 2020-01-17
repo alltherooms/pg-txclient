@@ -1,13 +1,13 @@
 import { QueryConfig } from 'pg';
 import { Client } from './db';
-import DbError from './dberror';
+import { DbError } from './dberror';
 
 type State = null | 'begin' | 'commit' | 'rollback';
 
 /*
 * Database client with transactions support
 */
-export default class TxClient {
+export class TxClient {
   private txstate: State = null;
 
   private readonly client: Client;

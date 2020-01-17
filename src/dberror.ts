@@ -1,4 +1,4 @@
-export default class DbError extends Error {
+export class DbError extends Error {
   readonly query: string;
 
   readonly values: any[] | undefined;
