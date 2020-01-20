@@ -14,7 +14,7 @@ export const connect = async (options: NamedPoolConfig, autocommit: boolean = tr
   const { name, validations } = options;
 
   if (validations) {
-    validations();
+    validations({ ...options, validations: undefined });
   }
 
   const pool = pools[name] || new Pool(options);

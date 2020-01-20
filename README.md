@@ -49,3 +49,26 @@ try {
   dataConn.release();
 }
 ```
+
+## Validate your configurations
+
+This is useful to check your connection configurations before connecting.
+
+```ts
+import { NamedPoolConfig, connect } from 'pg-txclient';
+
+const validations = ({ host }) => {
+  if (process.env.NODE_ENV !=== 'production' && isProductionHost(host)) {
+    throw new Error('Watch out! Your trying to connect to a production host');
+  }
+}
+
+const config: NamedPoolConfig = {
+  name: 'data-postgres',
+  host,
+  ...
+  validations,
+};
+
+const dataConn = await connect(config); // this will throw before connecting!
+```
