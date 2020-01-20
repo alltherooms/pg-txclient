@@ -20,8 +20,6 @@
   "devDependencies": {
     "@types/node": "^13.1.7",
     "@types/pg": "^7.14.1",
-    "rollup": "^1.29.0",
-    "rollup-plugin-typescript2": "^0.25.3",
     "typescript": "^3.7.5"
   }
 }
