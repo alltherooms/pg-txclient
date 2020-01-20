@@ -1,7 +1,7 @@
 {
   "name": "pg-txclient",
   "version": "0.0.7",
-  "description": "Transactional pg client and connection helper",
+  "description": "Transactional pg-Client and connection helper",
   "repository": {
     "type": "git",
     "url": "https://github.com/alltherooms/pg-txclient.git"
