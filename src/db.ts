@@ -9,7 +9,7 @@ type Pools = {
 export type NamedPoolConfig = PoolConfig & { name: string, validations?: Function };
 export type Client = PoolClient;
 
-const pools: Pools = {};
+export const pools: Pools = {};
 export const connect = async (options: NamedPoolConfig, autocommit: boolean = true) => {
   const { name, validations } = options;
 
