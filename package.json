@@ -1,6 +1,6 @@
 {
   "name": "pg-txclient",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Transactional pg-Client and connection helper",
   "repository": {
     "type": "git",
