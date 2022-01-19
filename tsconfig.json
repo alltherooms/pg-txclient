@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "module",
+    "module": "commonjs",
     "declaration": true,
     "isolatedModules": false,
     "noEmit": false,
     "allowJs": false,
     "outDir": "lib",
-    "target": "esnext",
+    "target": "ES2017",
     "lib": ["es2017"],
   },
   "exclude": [
