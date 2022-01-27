@@ -6,7 +6,7 @@
     "noEmit": false,
     "allowJs": false,
     "outDir": "lib",
-    "target": "es2017",
+    "target": "ES2017",
     "lib": ["es2017"],
   },
   "exclude": [
